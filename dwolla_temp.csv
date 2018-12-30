@@ -1,0 +1,50 @@
+What is TC Payments powered by Dwolla?,,,,,,,,,
+"TC Payments is a bank transfer functionality powered by Dwolla. Dwolla is a powerful payments platform that securely connects to bank or credit union accounts to enable the ACH payments for any individual or organization in the U.S. By leveraging Dwolla’s API, TenantCloud is able to provide an integrated ACH payments experience for seamless funds transfers for our customers, while reducing the headaches associated with fraud, exposure of sensitive financial data, and complications of using third-party processors.",,,,,,,,,
+"Is Dwolla a bank? No.  Money held in a Dwolla account is housed by Dwolla’s partner financial institutions, Veridian Credit Union and Compass Bank. Neither Dwolla or its holding partners collect interest on funds held in Dwolla account balances.   Dwolla, Inc. is an agent of Veridian Credit Union and Compass Bank and all funds associated with your account in the Dwolla network are held in pooled accounts at Veridian Credit Union and Compass Bank. These funds are not eligible for individual insurance, including FDIC insurance and may not be eligible for share insurance by the National Credit Union Share Insurance Fund. Dwolla, Inc. is the operator of a software platform that communicates user instructions for funds transfers to Veridian Credit Union and Compass Bank. ",,,,,,,,,
+What does each transfer status mean?,,,,,,,,,
+A normal ACH transfer workflow includes the following statuses:,,,,,,,,,
+"Pending A transfer is initiated and starts off as “pending.” A transfer is pending when the money has yet to leave the funding source or it is en route to its destination.",,,,,,,,,
+"Processed Once the ACH transfer has cleared successfully, it will be marked as “processed.” A processed transfer represents money that has reached its destination account—either a balance or bank account. For a balance, funds will become available to the recipient, while for a bank account, it may take additional time to become available, depending on your bank.",,,,,,,,,
+"Note: “processed” is not necessarily a final state. (See “failed” status below for additional context.) Between the ACH transfer statuses of “pending” and “processed” there are two other transfer statuses which can occur: “canceled” or “failed”.",,,,,,,,,
+"Canceled If a transfer’s status changes from “pending” to “canceled”, this means that the transfer was canceled. See “Bank to Dwolla network” and “Dwolla network to bank” in the processing times section for available cancellation windows.",,,,,,,,,
+"Failed If a transfer failed to clear successfully (usually as a result of an ACH reject or return), the transfer’s status will be “failed”. Transfers can fail for a number of reasons, e.g. insufficient funds, invalid account number, no account/unable to locate account, etc.",,,,,,,,,
+"Note: in rare cases, a “processed” transfer may, later on, get returned as “failed”.",,,,,,,,,
+How to add a bank account?,,,,,,,,,
+"In order to move money, you’ll need to connect your bank accounts to your TCPayments account. You can add up to 6 bank accounts to your TCPayments settings. There are 3 types of bank account you can add to your TC Payments powered by Dwolla account:",,,,,,,,,
+"Main Bank Account:  This can be the operating account for a property management company or the default account for a DIY landlord. If you are not a property management company then setting up this type of account is all you need.",,,,,,,,,
+"Deposit Bank Account: For a property management companies or landlords that are required to separate tenant liabilities (i.e. deposits and prepaid-rent). All the liability sent will go directly to this bank account.",,,,,,,,,
+"Property Bank Accounts:  For property management companies that separate “rent in and out” accounts from their operating bank account, this account(s) will allow all rent and other property owner based transactions to go to a specific account separate than the company’s business operating account.",,,,,,,,,
+"If you have multiple accounts with the same bank, you’ll be asked to choose one. After that, your bank account will be successfully connected so you can easily transfer money in and out. Instant Verification Method (recommended)
+Instant Account Verification uses the same login credentials you use on your bank’s website, and securely verifies that you own the account within seconds. The banking information you enter is not stored by Dwolla or TenantCloud. ",,,,,,,,,
+The “account name” is for your reference only. Pick something that describes the account so you’ll remember it later. For example “B of A -- checking” or “My Savings Account #4”.,,,,,,,,,
+Your account type must either be a checking or savings account. You cannot link “non-transactional” accounts like investment or money market accounts.​,,,,,,,,,
+Your routing number is the nine-digit code your bank uses to identify how funds are sent and received through your bank account. Do not enter a special routing number that your bank gave you just for wire transfers only - use the typical routing number found on your paper checks or on your bank’s website.​,,,,,,,,,
+TCPayments does not link with debit/credit cards.​​,,,,,,,,,
+Your banking information is not visible to other members of the Dwolla and TenantCloud network.,,,,,,,,,
+"In order to set up a personal account, you will be asked to enter basic personal identifying information. Once set up, your account will have the ability to fulfill payment requests and receive money from personal and business accounts registered within TenantCloud. There are no limits on the number of transactions you can perform each day, week, or month.",,,,,,,,,
+"Each transaction has a default limit of $5,000 per transaction.",,,,,,,,,
+You'll then come to a registration page that requires basic information regarding the organization itself and personal information for the business/organization representative signing up. ,,,,,,,,,
+These will include:,,,,,,,,,
+The business (required),,,,,,,,,
+The controller (conditionally required),,,,,,,,,
+The beneficial owner (conditionally required),,,,,,,,,
+"In order to set up a business account, you will be asked to enter business identifying information and to provide data about the business’s control, including all owners who, directly or indirectly, own 25% or more of the equity interests of the company.",,,,,,,,,
+Is there a limit to the number of transactions? ,,,,,,,,,
+"Once set up, your account will be able to fulfill payment requests and receive money from personal and business accounts registered within TenantCloud. There are no limits on the number of transactions you can perform each day, week, or month.",,,,,,,,,
+"Each transaction has a default limit of $10,000 per transaction.",,,,,,,,,
+"To set up a Business  account, go to the main Settings menu and choose Online payments. Click on the “Set up” button under the TCPayments option. Select Business Account as the type and continue entering basic information:",,,,,,,,,
+Account Admin,,,,,,,,,
+A business account will need an account admin to enroll the company during the onboarding process. This account admin is not identity verified. To become fully verified a controller and/or a beneficial owner may need to be identity verified. ,,,,,,,,,
+Controller,,,,,,,,,
+"A controller is any natural individual who holds significant responsibilities to control manage, or direct a company or other corporate entity (e.g. CEO CFO etc). A company may have more than one controller but only one controller’s information must be collected. The controller will need to provide information to be fully identity verified. This includes their last four SSN and date of birth for identity verification purposes. For certain business types  a business’s EIN will also need to be provided as part of the process.",,,,,,,,,
+Beneficial Owners,,,,,,,,,
+Certain business types may also need to add and certify beneficial ownership. A beneficial owner is any natural person who, directly or indirectly,owns 25% or more of the equity interests of the company.,,,,,,,
+"How to link property to a bank account?
+If you want the money sent to the specific property deposited straight to your bank account automatically, you can link the property to one of the available bank accounts.
+Go to TCPayments settings from Settings → Online Payments menu and click Account Info & Settings tab:
+Scroll to the bottom of the page. Here you will see the list of your properties, what account is linked to each property and its status.   Unassigned  This status means that all funds related to this property sent online will be deposited to the TCBalance account.  Assigned This status means that all funds related to this property sent online will be deposited to the assigned bank account account. Time from Dwolla network to recipient’s bank account: 1-2 business days.
+You can re-assign the bank accounts at any time. But those transactions that were already pending at the time of re-assigning the bank accounts will not change the destination source",,,,,,,,,
+"How to set TCBalance auto-withdraw?
+If you did not link the properties to the bank accounts, the funds will go straight to your TCBalance. Wouldn’t it be nice if money sent to you through Dwolla deposited straight to your bank account automatically?
+To enable TCBalance auto-withdrawal, go to your TCPayments settings and open Account Info & Settings tab first. Click on the Automatic Withdraw toggle button: Here you can enter a start date of withdraw, frequency and the destination account. Auto-withdrawals will arrive in your bank account within 1-2 business days.  When Auto-Withdrawal is enabled, the total of the day’s incoming transactions will be automatically transferred to your bank account once each business day. If you receive incoming transactions on a weekend or a bank holiday, these payments will be sent to your bank account the following business day.
+This might be helpful: How to link property to a bank account? Why is my transaction still pending?",,,,,,,,,
